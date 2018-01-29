@@ -1,0 +1,22 @@
+<p>Liste des Clients</p>
+
+
+<table>
+
+	<td>id</td>
+	<td>nom</td>
+	<td>prenom</td>
+	<td>soldeCC</td>
+	<td>soldeEp</td>
+	<td>Adresse</td>
+	<tr *ngFor="let cli of clients">
+
+		<td>{{ cli.id }}</td>
+		<td>{{ cli.nom }}</td>
+		<td>{{ cli.prenom}}</td>
+		<td>{{ cli.soldeCC }}</td>
+		<td>{{ cli.soldeEp }}</td>
+		<td>{{ cli.adresse.adresse }} {{cli.adresse.codePostal}} {{
+			cli.adresse.ville }} {{ cli.adresse.telephone }}</td>
+	</tr>
+</table>

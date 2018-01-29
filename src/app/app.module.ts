@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { LigneclientComponent } from './ligneclient/ligneclient.component';
+import { ListClientComponent } from './list-client/list-client.component';
+import { ListeClComponent } from './liste-cl/liste-cl.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import {MatButtonModule} from '@angular/material/button';
     OperationShowComponent,
     VirementComponent,
     VersementComponent,
-    LoginComponent
+    LoginComponent,
+    LigneclientComponent,
+    ListClientComponent,
+    ListeClComponent
   ],
   imports: [
     BrowserModule,
