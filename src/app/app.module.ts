@@ -10,6 +10,10 @@ import { HttpModule } from '@angular/http';
 import { OperationShowComponent } from './operation-show/operation-show.component';
 import { VirementComponent } from './virement/virement.component';
 import { VersementComponent } from './versement/versement.component';
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -18,7 +22,8 @@ import { VersementComponent } from './versement/versement.component';
     ShowoperationsComponent,
     OperationShowComponent,
     VirementComponent,
-    VersementComponent
+    VersementComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,10 @@ import { VersementComponent } from './versement/versement.component';
     HttpModule,
     routing,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

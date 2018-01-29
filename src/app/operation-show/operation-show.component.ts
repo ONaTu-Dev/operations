@@ -15,16 +15,12 @@ export class OperationShowComponent implements OnInit {
 
   constructor(private serviceOperation: OperationServiceService) {}
   getOperations(critere: HTMLInputElement) {
-   
-    this.serviceOperation.getOperations(new Operations('','',0,"",this.critere)).subscribe(data => this.operations = data,
+
+    this.serviceOperation.getOperations(new Operations('', '', 0, '', this.critere)).subscribe(data => this.operations = data,
       error => console.log('!!!!!!!!'));
   }
 
   ngOnInit() {
    // this.getOperations();
   }
-
-
-
-
 }
