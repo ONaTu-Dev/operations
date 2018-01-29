@@ -1,0 +1,27 @@
+<p>
+  showoperations works!
+</p>
+
+<div class="tab">
+	<ul>
+		<li *ngFor="let operation of operations">
+<!-- 			<p>No : {{operation.id}}</p> -->
+			
+			<p>Client debiteur</p>
+			<p>Nom : {{operation.nomClient}}</p>
+			<p>Prenom : {{operation.prenomClient}}</p>
+			<p>Type de l'operation: {{operation.typeOper}}</p>
+			<p>Numero de compte depart: {{operation.numCompteDepart}}</p>
+			<p>Numero de compte cible: {{operation.numCompteCible}}</p>
+			<p>Montant transfert: {{operation.montant}}</p>
+			
+<!-- 			<p>Date de l'operation: {{operation.date}}</p> -->
+<!-- 			<p>Etat de la transaction: {{operation.etat}}</p> -->
+			
+<!-- 			<button (click)="selectArticle(article)" -->
+<!-- 				class="ui positive right floated button">Update</button> -->
+<!-- 				<button (click)="deleteArticle(article.id)" -->
+<!-- 				class="ui positive right floated button">Delete</button> -->
+		</li>
+	</ul>
+</div>

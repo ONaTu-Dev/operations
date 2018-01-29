@@ -1,0 +1,21 @@
+<p>
+  operation-show works!
+</p>
+<form>
+<input name ="critere"  #critere > Critere trier
+<button (click) ="getOperations(critere)" > OK</button>
+</form>
+
+
+<div class="tab">
+	<ul>
+		<li *ngFor="let operation of operations">
+<!-- 			<p>No : {{operation.id}}</p> -->
+			
+			<p>Client debiteur</p>
+			<p>Nom : {{operation.nomClient}}</p>
+			<p>Prenom : {{operation.prenomClient}}</p>
+			<p>Type de l'operation: {{operation.typeOper}}</p>
+			<p>Numero de compte depart: {{operation.numCompteDepart}}</p>
+			<p>Numero de compte cible: {{operation.numCompteCible}}</p>
+			<p>Montant transfert: {{operation.montant}}</p>

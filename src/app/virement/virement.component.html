@@ -1,0 +1,27 @@
+<p>
+  virement works!
+</p>
+
+ <form (ngSubmit)="addOperation()" [formGroup]="virementForm">	
+<div> <label for="numDepart">Numero compte depart </label> <input type="text" name="numDepart" id="numDepart" [formControl]="numDepart" required>
+ </div>
+ <div> <label for="numCible">Numero compte cible</label> <input type="text" name="numCible" id="numCible" [formControl]="numCible" required> 
+</div>
+<!-- <div> <label for="dateOperation">Date Operation</label> <input type="text" name="dateOper" id="dateOper" [formControl]="dateOper" required>  -->
+<!-- </div> -->
+<div> <label for="montant">Montant</label> <input type="text" name="montant" id="montant" [formControl]="montant" required> 
+</div>
+<button type="submit">Valider</button> 
+</form>
+ 
+ 
+ <div class="tab">
+	<ul>
+		<li *ngFor="let operation of operations">
+ 
+ <p>Nom : {{operation.nomClient}}</p>
+			<p>Prenom : {{operation.prenomClient}}</p>
+			<p>Type de l'operation: {{operation.typeOper}}</p>
+			</li>
+	</ul>
+</div>
