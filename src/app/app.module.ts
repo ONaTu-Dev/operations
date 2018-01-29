@@ -17,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { LigneclientComponent } from './ligneclient/ligneclient.component';
 import { ListClientComponent } from './list-client/list-client.component';
 import { ListeClComponent } from './liste-cl/liste-cl.component';
+import { VueclientComponent } from './vueclient/vueclient.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ListeClComponent } from './liste-cl/liste-cl.component';
     LoginComponent,
     LigneclientComponent,
     ListClientComponent,
-    ListeClComponent
+    ListeClComponent,
+    VueclientComponent
   ],
   imports: [
     BrowserModule,
