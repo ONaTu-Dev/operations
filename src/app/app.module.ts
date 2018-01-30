@@ -18,7 +18,8 @@ import { LigneclientComponent } from './ligneclient/ligneclient.component';
 import { ListClientComponent } from './list-client/list-client.component';
 import { ListeClComponent } from './liste-cl/liste-cl.component';
 import { VueclientComponent } from './vueclient/vueclient.component';
-
+import { MenuComponent } from './menu/menu.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { VueclientComponent } from './vueclient/vueclient.component';
     LigneclientComponent,
     ListClientComponent,
     ListeClComponent,
-    VueclientComponent
+    VueclientComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { VueclientComponent } from './vueclient/vueclient.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
