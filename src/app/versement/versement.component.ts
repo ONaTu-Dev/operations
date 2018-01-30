@@ -12,14 +12,13 @@ import {FormControl, FormGroup, FormBuilder, Validators, AbstractControl} from '
 export class VersementComponent implements OnInit {
 
 operations: Operations[];
- 
 
   numDepart: AbstractControl;
   numCible: AbstractControl;
   montant: AbstractControl;
-  
+
   versementForm: FormGroup;
-  
+
   constructor(private fb: FormBuilder, private serviceOperation: OperationServiceService) {
     this.versementForm = this.fb.group({
       'numCible': ['', Validators.required],

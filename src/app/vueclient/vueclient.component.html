@@ -1,0 +1,20 @@
+<p>
+  Edition d'un Client
+</p>
+
+
+
+<div *ngIf="id">
+	<p>id: {{actualClient.id}}</p>
+
+	
+    <p>login: <input placeholder="{{actualClient.login}}"  #loginput>
+	<p>prenom: <input placeholder="{{actualClient.prenom}}"  #preninput>
+	<p>nom: <input placeholder="{{actualClient.nom}}"  #nominput>
+	<p>adresse / rue : <input placeholder="{{actualClient.adresse.adresse}}"  #adr1input>
+	<p>adresse / ville : <input placeholder="{{actualClient.adresse.ville}}"  #adr2input>
+	<p>adresse / codePostal : <input placeholder="{{actualClient.adresse.codePostal}}"  #adr3input>
+	<p>adresse / telephone : <input placeholder="{{actualClient.adresse.telephone}}"  #adr4input>
+	
+</div>
+<button (click)="edit(loginput)" > editer</button>

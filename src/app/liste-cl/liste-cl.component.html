@@ -1,0 +1,19 @@
+<p>
+  Cliquer sur la ligne client
+</p>
+
+<table>
+
+	<tr *ngFor="let cli of clients; index as i" >
+		<td><a [routerLink]="['/client/', i]"> <div>{{ i+1 }} fiche client </div>  </a></td>
+		<td>{{ cli.id }} </td> 
+		<td>{{ cli.nom }}</td>
+		<td>{{ cli.prenom}}</td>
+		<td>{{ cli.soldeCC }}</td>
+		<td>{{ cli.soldeEp }}</td>
+		<td>{{ cli.adresse.adresse }} {{cli.adresse.codePostal}} {{
+			cli.adresse.ville }} {{ cli.adresse.telephone }}</td>
+		<td><a [routerLink]="['/client/', i]"> <div>{{ i+1 }} editer </div>  </a></td>
+	</tr>
+</table>
+
