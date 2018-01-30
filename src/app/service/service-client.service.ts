@@ -44,7 +44,7 @@ export class ServiceClientService {
   //   saveClient(cl: Client){
   //    const headers = new Headers({'Content-type': 'application/json'});
   //    return this.http.post('http://localhost:8000/ProxiBanqueV3b/', cl, {headers: headers});
-/ }
+  // }
 
 }
 

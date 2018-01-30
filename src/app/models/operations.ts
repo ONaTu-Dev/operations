@@ -10,7 +10,7 @@ export class Operations {
   typeOper: string;
   numCompteDepart: string;
   numCompteCible: string;
-  critere : number;
+  critere: number;
 //  constructor(numCompteDepart: string, numCompteCible: string, montant: number) {
 //
 //    // this.date = date;
@@ -31,7 +31,6 @@ constructor(numDepart: string, numCible: string, montant: number,opetype: string
   this.critere = critere;
   }
 
-
-
-
 }
+
+
