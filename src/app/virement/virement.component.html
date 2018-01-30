@@ -2,6 +2,36 @@
   virement works!
 </p>
 
+<div class="search">
+<form [formGroup]="myForm" (ngSubmit) ="onSubmit(myForm.value)"
+[class.error]="!myForm.valid && myForm.touched">
+<div [class.error]="!nom.valid && nom.touched">
+<label for="nomInput"></label>
+<input type="text" id="nomInput" placeholder="nom a chercher" [formControl]="nom">
+<div *ngIf="!nom.valid"> Nom saisi est invalide</div>
+<div *ngIf="nom.hasError('required')">Nom est obligatoire</div>
+<button (click)="getAllClientByName(nom)">Ok</button>
+</div> 
+
+<div [class.error]="!prenom.valid && prenom.touched">
+<label for="prenomInput"></label>
+<input type="text" id="prenomInput" placeholder="prenom a chercher" [formControl]="prenom">
+<div *ngIf="!prenom.valid"> Prenom saisi est invalide</div>
+<div *ngIf="prenom.hasError('required')">Prenom est obligatoire</div>
+
+</div>
+
+
+
+<div *ngIf="!myForm.valid">Form is invalid</div>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+
+
+
+
  <form (ngSubmit)="addOperation()" [formGroup]="virementForm">	
 <div> <label for="numDepart">Numero compte depart </label> <input type="text" name="numDepart" id="numDepart" [formControl]="numDepart" required>
  </div>

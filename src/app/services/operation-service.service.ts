@@ -23,5 +23,11 @@ constructor(private http: Http) {}
     return this.http.post('http://localhost:8080/ProxiBanqueV4_HS_NTH/operationsPost', operation).map((res: Response) => res.json())
       .catch((error: any) => Observable.throw('Big pb!'));
   }
+  
+  getAllClientByName(nom: string): Observable<any>{
+    return this.http.get('http://localhost:8080/ProxiBanqueV4_HS_NTH/clientsNom').map((res: Response) => res.json())
+      .catch((error: any) => Observable.throw('Big pb!'));
+  }
+  
 
 }
