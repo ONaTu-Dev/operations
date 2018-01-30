@@ -33,7 +33,6 @@ export class VirementComponent implements OnInit {
     });
     this.nom = this.myForm.controls['nom'];
     this.prenom = this.myForm.controls['prenom'];
-    
     this.virementForm = this.fb.group({
       'numDepart': ['', Validators.required],
       'numCible': ['', Validators.required],
@@ -71,7 +70,6 @@ export class VirementComponent implements OnInit {
   getAllClientByName(nom){
     console.log(`nom a chercher ${this.nom}`);
     this.serviceOperation.getAllClientByName(this.nom.value)
-    
   }
 }
 

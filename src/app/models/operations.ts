@@ -20,7 +20,7 @@ export class Operations {
 //    // this.etat = etat;
 //    // this.typeOper = type;
 //  }
-constructor(numDepart: string, numCible: string, montant: number,opetype: string,critere: number) {
+constructor(numDepart: string, numCible: string, montant: number, opetype: string, critere: number) {
 
     // this.date = date;
     this.numCompteDepart = numDepart;

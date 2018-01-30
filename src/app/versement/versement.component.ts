@@ -30,7 +30,7 @@ operations: Operations[];
 
   }
   ngOnInit() {
-    this.getOperations}
+    this.getOperations }
   addOperation(operation: Operations) {
     // const ldapInformation = {login: this.loginForm.value.ldapLogin, password: this.loginForm.value.ldapPassword};}
     console.log(`input1 ${this.versementForm.value.numDepart}`);
