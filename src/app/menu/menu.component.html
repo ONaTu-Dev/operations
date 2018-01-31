@@ -1,10 +1,11 @@
  <meta charset="utf-8">
 <mat-card class="menu-card">
   <mat-card-header>
-    <mat-card-title>Menu Proxibaque </mat-card-title>   
+    <mat-card-title [ngClass]="{'custom-card':true}">Bienvenue sur l'interface Proxibanque </mat-card-title>   
   </mat-card-header>
   <mat-card-content>
   		<mat-toolbar>
+
     		 <button mat-button color="primary" [routerLink]="['/login']"> Login </button>
     		 <button mat-button color="primary" [routerLink]="['/showoperations']" > Historisque des operations </button>
     	  	 <button mat-button color="primary" [routerLink]="['/virement']" >Virement </button>
@@ -14,6 +15,19 @@
        		 <button mat-button color="primary" [routerLink]="['/client']" > editer un client </button>
          	 <button mat-button color="primary" [routerLink]="['/vueclient']"> vue d'un client </button>
         	 <button mat-button color="primary" [routerLink]="['/ligneclient']" > ligneclient </button>
+
+<!--     		<button mat-button color="primary" [routerLink]="['/login']"> Login </button> -->
+<!--     		<button mat-button color="primary" [routerLink]="['/listClient']" > liste des clients </button> -->
+<!--     		<button mat-button color="primary" [routerLink]="['/client']" > editer un client </button> -->
+<!--     		<button mat-button color="primary" [routerLink]="['/vueclient']"> vue d'un client </button> -->
+<!--     	    <button mat-button color="primary" [routerLink]="['/virement']" >Virement </button> -->
+<!--         	<button mat-button color="primary" [routerLink]="['/versement']" >Versement </button> -->
+<!--        		<button mat-button color="primary" [routerLink]="['/operation-show']" > Opérations </button> -->
+       		
+         	 <!--  <button mat-button color="primary" [routerLink]="['/showoperations']" > Historisque des operations </button>  
+        	 <button mat-button color="primary" [routerLink]="['/ligneclient']" > ligneclient </button> -->
+		
+
 		</mat-toolbar>
     </mat-card-content>
 </mat-card>
