@@ -1,7 +1,7 @@
 import {Client} from '../model/client';
 import {Adresse} from '../model/adresse';
 import {ServiceClientService} from '../service/service-client.service';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import {Component, OnInit} from '@angular/core';
 
 @Component({

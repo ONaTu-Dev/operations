@@ -22,7 +22,7 @@ const appRoutes: Routes = [
   {path: 'listClient', component: ListClientComponent},
   {path: 'list-Cl2', component: ListeClComponent},
   {path: 'login', component: LoginComponent },
-  {path: 'client', component: VueclientComponent },
+  {path: 'client/:id', component: VueclientComponent },
   {path: 'vueclient', component: VueclientComponent },
   {path: 'ligneclient', component: LigneclientComponent }
 ];

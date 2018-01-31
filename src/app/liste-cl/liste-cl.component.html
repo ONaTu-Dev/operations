@@ -1,8 +1,24 @@
+<!doctype html>
 <p>
   Cliquer sur la ligne client
 </p>
 
+<h1>Liste des clients</h1>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
 <table>
+
+<tr>
+<td>Fiche Client</td>
+			<td>Id</td>
+			<td>NomClient</td>
+			<td>PrenomCli</td>
+			<td>FicheClient</td>
+			<td>editionClient</td>
+			<td>Adresse</td>
+			
+
 
 	<tr *ngFor="let cli of clients; index as i" >
 		<td><a [routerLink]="['/client/', i]"> <div>{{ i+1 }} fiche client </div>  </a></td>
@@ -17,3 +33,14 @@
 	</tr>
 </table>
 
+
+</div>
+<script>
+	var app = angular.module('myApp', []);
+	app.controller('customersCtrl', function($scope, $http) {
+		$http.get("customers.php")
+			.then(function(response) {
+				$scope.names = response.data.records;
+			});
+	});
+</script>

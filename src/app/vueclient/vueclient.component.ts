@@ -35,9 +35,9 @@ export class VueclientComponent implements OnInit {
   edit(str: string) {
     console.log('dans foo');
     this.actualClient.login = 'loginddd';
-    var cl2 = new Client();
+    let cl2 = new Client();
     cl2.nom = 'nom222';
-    console.log(cl2);
+    console.log('client dans edit   ' + cl2.nom);
     this.serv.create(cl2);
   }
 }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -18,6 +19,7 @@ import { LigneclientComponent } from './ligneclient/ligneclient.component';
 import { ListClientComponent } from './list-client/list-client.component';
 import { ListeClComponent } from './liste-cl/liste-cl.component';
 import { VueclientComponent } from './vueclient/vueclient.component';
+import { AffichageComponent } from './affichage/affichage.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { VueclientComponent } from './vueclient/vueclient.component';
     LigneclientComponent,
     ListClientComponent,
     ListeClComponent,
-    VueclientComponent
+    VueclientComponent,
+    AffichageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import { VueclientComponent } from './vueclient/vueclient.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
