@@ -19,8 +19,12 @@ import { LigneclientComponent } from './ligneclient/ligneclient.component';
 import { ListClientComponent } from './list-client/list-client.component';
 import { ListeClComponent } from './liste-cl/liste-cl.component';
 import { VueclientComponent } from './vueclient/vueclient.component';
+
 import { AffichageComponent } from './affichage/affichage.component';
 
+
+import { MenuComponent } from './menu/menu.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { AffichageComponent } from './affichage/affichage.component';
     ListClientComponent,
     ListeClComponent,
     VueclientComponent,
+
     AffichageComponent
+
+    MenuComponent
+
   ],
   imports: [
     BrowserModule,
@@ -46,7 +54,11 @@ import { AffichageComponent } from './affichage/affichage.component';
     MatButtonModule,
     MatInputModule,
     MatCardModule,
+
     MatTabsModule
+
+    MatToolbarModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

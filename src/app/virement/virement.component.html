@@ -13,15 +13,6 @@
 <button (click)="getAllClientByName(nom)">Ok</button>
 </div> 
 
-<div [class.error]="!prenom.valid && prenom.touched">
-<label for="prenomInput"></label>
-<input type="text" id="prenomInput" placeholder="prenom a chercher" [formControl]="prenom">
-<div *ngIf="!prenom.valid"> Prenom saisi est invalide</div>
-<div *ngIf="prenom.hasError('required')">Prenom est obligatoire</div>
-
-</div>
-
-
 
 <div *ngIf="!myForm.valid">Form is invalid</div>
 

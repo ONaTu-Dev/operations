@@ -3,9 +3,8 @@ export class Client {
    id: number;
    nom: string;
    prenom: string;
-   motDePasse: string;
-   login: string;
    email: string;
+
    idcons: number;
    adresse: Adresse;
   telephone: string;
@@ -13,6 +12,14 @@ export class Client {
 //   numCompteEpargne: string;
    soldeCC: string;
    soldeEp: string;
+
+   adresseline: string;
+   codepostal;number;
+   ville:string;
+   telephone :string;
+   soldeCC:number;
+   soldeEp: number;
+
 }
 
 

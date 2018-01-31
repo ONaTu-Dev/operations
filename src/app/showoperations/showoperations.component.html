@@ -1,20 +1,25 @@
-<p>
-  showoperations works!
-</p>
+<form (ngSubmit)="getOperations()" [formGroup]="showoperationForm">	
+	<div> <label for="critere">Critere de recherche</label> <input type="text" name="critere" id="critere" [formControl]="critere" required> 
+	</div>
+	<button type="submit">Valider</button> 
+	</form>
 
-<div class="tab">
-	<ul>
-		<li *ngFor="let operation of operations">
-<!-- 			<p>No : {{operation.id}}</p> -->
-			
-			<p>Client debiteur</p>
-			<p>Nom : {{operation.nomClient}}</p>
-			<p>Prenom : {{operation.prenomClient}}</p>
-			<p>Type de l'operation: {{operation.typeOper}}</p>
-			<p>Numero de compte depart: {{operation.numCompteDepart}}</p>
-			<p>Numero de compte cible: {{operation.numCompteCible}}</p>
-			<p>Montant transfert: {{operation.montant}}</p>
-			
+	<div class="tab">
+		<ul>
+			<li *ngFor="let operation of operations">
+	<!-- 			<p>No : {{operation.id}}</p> -->
+				
+	<!-- 			<p>Client debiteur</p>
+				<p>Nom : {{operation.nomClient}}</p>
+				<p>Prenom : {{operation.prenomClient}}</p>
+				<p>Type de l'operation: {{operation.typeOper}}</p>
+	-->
+				<p>Type de l'operation: {{operation.typeOper}} 
+				Date de l'operation: {{operation.date|date :'dd/MM/yyyy hh:mm'}}  
+				<br/>
+				Numero de compte depart: {{operation.numCompteDepart}}
+				Numero de compte cible: {{operation.numCompteCible}}
+				Montant transfert: {{operation.montant}}</p>
 <!-- 			<p>Date de l'operation: {{operation.date}}</p> -->
 <!-- 			<p>Etat de la transaction: {{operation.etat}}</p> -->
 			

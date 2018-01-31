@@ -1,24 +1,23 @@
-<p>
-  operation-show works!
-</p>
-<form>
-<input name ="critere"  #critere > Critere trier
-<button (click) ="getOperations(critere)" > OK</button>
+
+<form (ngSubmit)="addClient()" [formGroup]="addClientForm">	
+<div> <label for="nom">Nom</label> <input type="text" name="nom" id="nom" [formControl]="nom" required>
+ </div>
+ <div> <label for="prenom">Prenom</label> <input type="text" name="prenom" id="prenom" [formControl]="prenom" required> 
+</div>	
+ <div> <label for="adresseline">Adresse</label> <input type="text" name="adresseline" id="adresseline" [formControl]="adresseline" required> 
+</div>
+ <div> <label for="codepostal">Code Postal</label> <input type="text" name="codepostal" id="codepostal" [formControl]="codepostal" required> 
+</div>
+ <div> <label for="ville">Ville</label> <input type="text" name="ville" id="ville" [formControl]="ville" required> 
+</div>
+<div> <label for="telephone">Telephone</label> <input type="text" name="telephone" id="telephone" [formControl]="telephone" required> 
+</div>
+ <div> <label for="soldeCC">Montant dépôt Compte Courant</label> <input type="text" name="soldeCC" id="soldeCC" [formControl]="soldeCC" required> 
+</div>
+ <div> <label for="soldeEp">Montant dépôt Compte Epargne</label> <input type="text" name="soldeEp" id="soldeEp" [formControl]="soldeEp" required> 
+</div>
+<button type="submit">Valider</button> 
 </form>
-
-
-<div class="tab">
-	<ul>
-		<li *ngFor="let operation of operations">
-<!-- 			<p>No : {{operation.id}}</p> -->
-			
-			<p>Client debiteur</p>
-			<p>Nom : {{operation.nomClient}}</p>
-			<p>Prenom : {{operation.prenomClient}}</p>
-			<p>Type de l'operation: {{operation.typeOper}}</p>
-			<p>Numero de compte depart: {{operation.numCompteDepart}}</p>
-			<p>Numero de compte cible: {{operation.numCompteCible}}</p>
-			<p>Montant transfert: {{operation.montant}}</p>
-			
-			
-			
+ 
+ 
+ 

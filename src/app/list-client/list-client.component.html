@@ -1,7 +1,9 @@
 <p>Liste des Clients</p>
 
+<mat-card>
 
 <table>
+<<<<<<< HEAD
 
 	<td>id</td>
 	<td>nom</td>
@@ -9,6 +11,16 @@
 	<td>soldeCC</td>
 	<td>soldeEp</td>
 	<td>Adresse</td>
+
+	<tr>
+		<td>id</td>
+		<td>nom</td>
+		<td>prenom</td>
+		<td>soldeCC</td>
+		<td>soldeEp</td>
+		<td>Adresse</td>
+	</tr>
+
 	<tr *ngFor="let cli of clients">
 
 		<td>{{ cli.id }}</td>
@@ -20,3 +32,4 @@
 			cli.adresse.ville }} {{ cli.adresse.telephone }}</td>
 	</tr>
 </table>
+</mat-card>
